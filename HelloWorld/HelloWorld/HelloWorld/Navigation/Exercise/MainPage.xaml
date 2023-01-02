@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:HelloWorld.Navigation.Exercise"
+            x:Class="HelloWorld.Navigation.Exercise.MainPage">
+    <NavigationPage Title="Activities" Icon="heart.png">
+        <x:Arguments>
+            <local:ActivityFeedPage/>
+        </x:Arguments>
+    </NavigationPage>    
+    <local:MyProfilePage Title="Profile" Icon="user.png"/>
+</TabbedPage>

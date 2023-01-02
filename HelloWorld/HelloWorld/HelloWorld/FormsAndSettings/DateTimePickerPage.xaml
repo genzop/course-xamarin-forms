@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             x:Class="HelloWorld.FormsAndSettings.DateTimePickerPage"
+             Padding="40">
+    <StackLayout>
+        <DatePicker Format="dd/MM/yyyy" DateSelected="DatePicker_DateChanged" MinimumDate="12/1/2017" MaximumDate="12/31/2017"/>
+        <TimePicker/>
+    </StackLayout>
+</ContentPage>

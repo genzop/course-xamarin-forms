@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HelloWorld.Extensions"
+             x:Class="HelloWorld.FormsAndSettings.PickerNavigation.MainPage">
+    <TableView Intent="Form">
+        <TableRoot>
+            <TableSection Title="Basics">
+                <TextCell Text="Name" Detail="Enzo Panettieri" />
+                <EntryCell Label="Title" Placeholder="(eg Shopping)" />
+                <SwitchCell Text="Notifications" On="true" />
+                <local:DateCell Label="Starts" />
+                <local:DateCell Label="Ends" />
+                <ViewCell Tapped="ContactMethod_Tapped">
+                    <StackLayout Orientation="Horizontal" Padding="13, 5">
+                        <Label Text="Contact Method" VerticalOptions="Center" />
+                        <Label x:Name="contactMethod" Text="None" TextColor="Gray" 
+							   VerticalOptions="Center" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+                </ViewCell>
+            </TableSection>
+        </TableRoot>
+    </TableView>
+</ContentPage>

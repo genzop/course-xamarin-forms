@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.BeyondBasics.Styles.ResourceDictionaryPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:Int32 x:Key="borderRadius">20</x:Int32>
+            <Color x:Key="buttonBackgroundColor">Green</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout Spacing="20" VerticalOptions="Center">
+        <Button Text="Login" BackgroundColor="{StaticResource buttonBackgroundColor}" TextColor="White" BorderRadius="{StaticResource borderRadius}" FontAttributes="Bold"/>
+        <Button Text="Register" BackgroundColor="{StaticResource buttonBackgroundColor}" TextColor="White" BorderRadius="{StaticResource borderRadius}" FontAttributes="Bold"/>
+    </StackLayout>
+</ContentPage>
